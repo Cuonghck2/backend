@@ -1,0 +1,5 @@
+[env]
+  APP_ENV = "production"
+  DB_CONNECTION = "mysql"
+  DB_HOST = "<MYSQL Fly .internal Address>"
+  DB_DATABASE= "<topicmanagement>"

@@ -68,8 +68,6 @@ Route::post('/members', [MembersController::class, 'store']);
 Route::put('/members/{idMember}', [MembersController::class, 'update']);
 Route::delete('/members/{idMember}', [MembersController::class, 'destroy']);
 
-
-
 //topics
 Route::get('/topics', [TopicsController::class, 'index']);
 Route::post('/topics', [TopicsController::class, 'store']);
@@ -88,3 +86,8 @@ Route::get('/awardLevel', [AwardLevelController::class, 'index']);
 
 //type result
 Route::get('/result', [TypeResultController::class, 'index']);
+
+//Test production
+Route::get('/test', function () {
+    return response()->json(['message' => 'Hello World']);
+});
